@@ -1,4 +1,4 @@
-#Cheat Sheet for Programmer
+#Basic Programming for Programmers
 -Colored text means that RobotC recognises the text created.
 
 -Lines and spaces are not read in the program, they are used for the programmer's organization.
