@@ -9,6 +9,6 @@
 
 -Pair Punctuation such as paranthesis ( ) and squared brackets [ ] are used to mark special meaning to the command that it is a part of.
 
--two slashes such as // are left by the programmer to let other programmers know what exactly the function is or what is going on.
+-Two slashes such as // are left by the programmer to let other programmers know what exactly the function is or what is going on.
 
 -
