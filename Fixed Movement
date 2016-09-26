@@ -1,0 +1,33 @@
+#pragma config(Motor,  port9,          rightfrontMotor,    tmotorServoContinuousRotation, openLoop) 
+#pragma config(Motor,  port10,         leftfrontMotor,     tmotorServoContinuousRotation, openLoop, reversed) 
+#pragma config(Motor,  port2,          rightbackMotor,     tmotorServoContinuousRotation, openLoop) 
+#pragma config(Motor,  port1,          leftbackMotor,      tmotorServoContinuousRotation, openLoop, reversed)  
+
+/*----------------------------------------------------------------------------------------------------*\ 
+|*                                     - Dual Joystick Control -                                      *| 
+|*                                                                                                    *| 
+|*                                        TANK TREAD MOBILITY                                         *| 
+|*                                                                                                    *| 
+|*                                        ROBOT CONFIGURATION                                         *| 
+|*    NOTES:                                                                                          *| 
+|*    1)  Ch1 is the X axis and Ch2 is the Y axis for the RIGHT joystick.                             *| 
+|*    2)  Ch3 is the Y axis and Ch4 is the X axis for the LEFT joystick.                              *| 
+|*                                                                                                    *| 
+|*    MOTORS & SENSORS:                                                                               *| 
+|*    [I/O Port]              [Name]              [Type]              [Description]                   *| 
+|*    Motor - Port 9          rightfrontMotor      VEX Motor           Right Front motor              *| 
+|*    Motor - Port 10          leftfrontMotor       VEX Motor           Left Front motor              *| 
+|*    Motor - Port 2          rightbackMotor       VEX Motor           Right Back motor               *| 
+|*    Motor - Port 1          leftbackMotor        VEX Motor           Left Back motor                *| 
+\*----------------------------------------------------------------------------------------------------*/  
+
+task main () 
+{ 
+	while(1 == 1)                                 //Infinite Loop will cause the program to never stop running 
+	{ 
+		motor[rightfrontMotor]  = vexRT[Ch2];  //Right Front Motor will be controlled by the right joystick y axis 
+		motor[rightbackMotor]   = vexRT[Ch2];  //Right Back Motor will be controlled by the right joystick y axis 
+		motor[leftfrontMotor]   = vexRT[Ch3];  //Left Front Motor will be controlled by the left joystick y axis 
+		motor[leftbackMotor]    = vexRT[Ch3];  //Left back Motor will be controlled by the left joystick y axis 
+	} 
+} 
