@@ -23,7 +23,6 @@
 
 task main ()
 {
-
   while(1 == 1)                                 //Infinite Loop will cause the program to never stop running
   {
     motor[rightfrontMotor]  = vexRT[Ch2Xmtr2];  //Right Front Motor will be controlled by the right joystick y axis
