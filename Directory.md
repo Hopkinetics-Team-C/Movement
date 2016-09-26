@@ -1,6 +1,4 @@
-# Robot1
-HHS Team C Robot
+# HHS Team C Robot
+First Task: Programming Basics
 
-Programming Basics
-
-First task: Get the robot moving.
+Second task: Get the robot moving.
